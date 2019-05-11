@@ -15,26 +15,34 @@ class DataResult extends Component {
         return(
             <React.Fragment>
                 <div className="">
-                    
-                <table className="table table-hover">
-                    <thead>
-                        <tr>
-                        <th scope="col">Type</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                        </tr>
-                    </thead>
-                    
-                    {dataApi.map(data =>(
-                        <JustOneData
-                           
-                            key= {data.login.uuid}
-                            data={data}
-                        />
 
-                    ) ) }
-                    </table>   
+                    <table className="table table-hover">
+                        <thead>
+                            <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Nationality</th>
+                            <th scope="col">Cellphone</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Login</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Picture</th>
+                            <th scope="col">Registred</th>
+                            
+                            </tr>
+                        </thead>
+                        
+                        {dataApi.map(data =>(
+                            <JustOneData
+                            
+                                key= {data.login.uuid}
+                                data={data}
+                            />
+
+                        ) ) }
+                        </table>   
                  </div>   
             </React.Fragment>
         )
@@ -46,7 +54,7 @@ class DataResult extends Component {
         return (  
             <React.Fragment>
                    {this.showData()}
-                   <h1>HOLA</h1>
+                   
             </React.Fragment>
         );
     }

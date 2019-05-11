@@ -16,15 +16,15 @@ class Searcher extends Component {
     this.props.searchForData(termn);
 
   }
-
-  
   
   render() { 
+    
     return ( 
+         
         <form onSubmit={this.handleData} >
           <div className="row">
             <div className="form-group col-md-8">
-              <input ref={this.searcherRef} type="text" className="form-control form-control-lg" placeholder="Buscar Registro" />
+              <input ref={this.searcherRef} type="text" className="form-control form-control-lg" placeholder="Número de registros a buscar" disabled/>
             </div>
 
             <div className="form-group col-md-4">
@@ -33,7 +33,8 @@ class Searcher extends Component {
 
 
           </div>
-        </form>  
+        </form> 
+        
      );
   }
 }

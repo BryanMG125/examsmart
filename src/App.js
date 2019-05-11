@@ -11,7 +11,8 @@ class App extends Component {
   
   consultApi = () =>{
     //const termn = this.state.termn;
-    //const url = 'https://randomuser.me/api?results={termn}';
+    //var number = termn.toString();
+    //const url = 'https://randomuser.me/api?results='+number;
     const url = 'https://randomuser.me/api?results=20';
     console.log(url);
 
